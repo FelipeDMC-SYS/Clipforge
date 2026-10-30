@@ -1,0 +1,41 @@
+CLIPFORGE - VERIFICACION DE LA ENTREGA PARA GITHUB
+Fecha: 30 de octubre de 2026
+Version: 1.8.0 / publicacion de origen: 11
+Commit de origen: e5d856352128be4b2a96a4956f63f7a34a44903c
+
+Entorno utilizado: Linux, Node.js 24.22.1, JSDOM 26.1.0.
+
+RESULTADOS
+- npm run check: 65 pruebas aprobadas, 0 fallos; sintaxis JavaScript correcta.
+- npm run test:dom: aprobado, incluida edicion/exportacion del video completo,
+  intervalos de 400 segundos, ajustes capturados por tarea y cola en segundo plano.
+  Se uso una instalacion externa de JSDOM de la misma version documentada.
+- npm run test:media: demo MP4 real reconocida por Mediabunny; 640 x 360,
+  aproximadamente 50 segundos, H.264 y audio presentes.
+- Servidor local: inicio, pagina, modulos, manifiesto, HEAD y rangos parciales
+  de video correctos; rutas fuera de dist y metodos no admitidos rechazados.
+- Scripts Python: sintaxis correcta; carga de fuentes comprobada en Linux.
+- Generador de casos OCR: 11 imagenes sinteticas creadas con tamano correcto.
+- Workflow de Pages: YAML valido, rama main y artefacto dist comprobados.
+- Manifiesto: rutas relativas e iconos presentes.
+- Documentacion: enlaces internos comprobados.
+- Comparacion con el origen: todos los 57 archivos funcionales/documentales
+  estan presentes; las 6 adaptaciones se explican en docs/PAQUETE_GITHUB.md.
+  Codigo multimedia y bibliotecas vendorizadas coinciden con el original.
+- ZIP: integridad comprobada; SHA256SUMS.txt enumera los archivos entregados
+  excepto el propio listado de hashes.
+
+ALCANCE
+Las pruebas DOM simulan canvas, workers y codecs. Los casos de conversion
+comprueban configuracion y multiplexado, pero no garantizan 4K/240 fps en un
+hardware concreto. En esta preparacion del ZIP no se repitio una exportacion
+completa en navegador ni la prueba de reconocimiento OCR WASM; si se verifico
+el generador de sus imagenes. Las comprobaciones anteriores de la aplicacion
+se conservan en docs/HISTORIAL_TECNICO.md.
+
+El iniciador de Windows se entrega preparado; no se ejecuto en Windows.
+El workflow se entrega configurado; no se publico en una cuenta de GitHub.
+
+La copia omite el manifiesto interno de Sites, el historial de Git, credenciales,
+archivos temporales y dependencias de pruebas instaladas. El sitio, sus recursos,
+las pruebas, los generadores y las instrucciones estan incluidos.

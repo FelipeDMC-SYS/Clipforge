@@ -1,0 +1,136 @@
+/* ClipForge · green studio. Shared accents for the app and installed identity. */
+:root{--bg:#080a08;--panel:#121512;--inset:#0c0f0c;--line:#2c332b;--muted:#9ca69a;--text:#f1f5ef;--accent:#53fc18;--accent-light:#a1ff78;--lime:#53fc18;--radius:12px}
+body{background:radial-gradient(ellipse at 72% -24%,#53fc1810,transparent 52%),var(--bg)}
+::selection{background:#53fc1840;color:#fff}
+.sidebar{background:#0c0e0c;border-color:#262c25}
+.brand-logo{background:transparent;border-radius:10px;box-shadow:0 0 24px #53fc1819;overflow:hidden}
+.brand-logo img{display:block;width:100%;height:100%}
+.brand small,.workspace-label{color:#7f8d7b}
+.nav-item{color:#a2ada0}
+.nav-item:hover{background:#1c231a}
+.nav-item.active{color:var(--accent);background:linear-gradient(90deg,#53fc1814,#53fc1804)}
+.nav-count{background:#252c23;color:#becbb9}
+.avatar{background:linear-gradient(145deg,#325322,#172213);border-color:#506c40;color:#caffb2}
+.profile{border-color:#2c3329}
+.topbar{background:#0b0e0bf2;border-color:#2a3127}
+.local-pill,.watermark{color:#94a18e}
+.local-pill span,.status-dot,.new-dot,.detector-dot{background:var(--accent);box-shadow:0 0 9px #53fc1840}
+.studio-intro .eyebrow,.section-heading .eyebrow{color:#93b580}
+.studio-intro h1 span{color:var(--accent)}
+.studio-intro p{color:#a1ac9d}
+.project-status{background:#53fc1806;border-color:#3c5133;color:#b3cba7}
+.project-status>span:first-child{background:var(--accent)}
+.workflow{background:#111510;border-color:#2a3326}
+.step>span{background:#1c2418;border-color:#38482f;color:#abbca1}
+.step.current>span{background:#53fc1810;color:var(--accent);border-color:#53fc1860}
+.panel{background:linear-gradient(145deg,#171c15,#10140f 70%);border-color:#303a2c;box-shadow:0 12px 32px #0003}
+.panel-header{background:#1b2117aa;border-color:#30392b}
+.panel-title>.icon,.inspector-glyph{color:#b9c9af}
+.primary,.quality-apply{background:var(--accent);color:#081204;border:1px solid #69ff34;box-shadow:0 2px 15px #53fc180c}
+.primary:hover:not(:disabled),.quality-apply:hover:not(:disabled){background:#7dff4c;border-color:#8bff60;box-shadow:0 3px 22px #53fc1822}
+.button.primary:disabled{background:#39502e;border-color:#526744;color:#d2e1c9;opacity:.6}
+.secondary{background:#20271c;border-color:#3c4735;color:#d1ddc9}
+.secondary:hover:not(:disabled),.icon-button:hover:not(:disabled){background:#2c3724;border-color:#5b704d;color:#efffe7}
+.success{background:var(--accent);color:#0a1605}
+.preview-stage{background:radial-gradient(ellipse at 50% 35%,#28451b26,transparent 65%),#080c08;border-color:#313d2b}
+.preview-stage.dragover{background:#192c10;outline-color:var(--accent)}
+.preview-tabs{background:#10150d;border-color:#3b4733}
+.preview-tabs button.active{background:#334528;color:#dbffca}
+.enhance-shortcut{background:linear-gradient(115deg,#2e4223,#1e2a17);border-color:#4a6839;color:#bdf69e}
+.art-frame.back{background:#1e2f17;border-color:#47713080}
+.art-frame.back div{background:#53fc1826}
+.art-frame.front{background:linear-gradient(135deg,#394d2d,#182211);border-color:#74906088;box-shadow:0 15px 30px #0006}
+.art-frame .icon{color:var(--accent);fill:#53fc1822}
+.art-duration{color:#c0d5b3}
+.art-spark{background:var(--accent);color:#0a1605;box-shadow:0 0 28px #53fc1822}
+.empty-preview p,.empty-preview .text-button{color:#a7b99d}
+.preview-badge,.motion-badge{background:#101a0de6;border-color:#53684577;color:#d1e8c3}
+.play-button{background:var(--accent);color:#0a1605}
+.transport input[type=range],.timeline-pan input{accent-color:var(--accent)}
+.file-indicator.loaded{background:var(--accent)}
+.timeline-header,.timeline-ticks,.timeline-hint,.timeline-pan{background:#10150d;border-color:#2d3926}
+.timeline{background:repeating-linear-gradient(90deg,transparent 0,transparent 49px,#a0bf840c 49px,#a0bf840c 50px),linear-gradient(#10170c,#131d0f);border-color:#46553a44}
+.timeline-key i{background:var(--accent)}
+.timeline-key i:nth-of-type(2){background:#b6c2b2}
+.timeline-selection{border-color:#53fc18;border-top-color:#80ff4c;background:linear-gradient(#53fc1822,#53fc1808);box-shadow:0 0 0 1px #53fc1814}
+.timeline-selection:hover,.timeline-selection:focus-within{background:linear-gradient(#53fc1833,#53fc1810);box-shadow:0 0 0 1px #53fc1840}
+.timeline-selection.dragging{border-color:#b2ff92;background:#53fc1825;box-shadow:0 0 18px #53fc1820}
+.selection-body{color:#e0ffd1}
+.selection-grip{color:#a1ff78}
+.selection-body #selectionLabel{background:#1c3c10e6}
+.trim-handle{background:#53fc18}
+.trim-handle span{border-color:#1e480c}
+.trim-handle:hover,.trim-handle:focus-visible{background:#a1ff78}
+.hint-dot{background:var(--accent)}
+#dragReadout,.quick-trim .clip-length b{color:#a1ff78}
+.quick-trim{background:#171e13;border-color:#3b4b30}
+.inspector{background:#131810}
+.inspector>.panel-header{background:#1c2516;border-color:#36472b}
+.inspector .beta-tag{background:#53fc180c;border-color:#53fc1838;color:#a1dd81}
+.inspector-tabs{background:#0d130a;border-color:#303d26}
+.inspector-tabs button.active{background:#53fc1812;border-color:#53fc1855;color:#bbffa2}
+.game-card{background:linear-gradient(145deg,#242e1d,#172013);border-color:#3e4d32}
+.game-card.active{background:linear-gradient(145deg,#2a401e,#15200f);border-color:#53fc1899;box-shadow:inset 0 1px #53fc181c}
+.game-card.active small{color:#a7d08f}
+.fortnite-symbol{color:#d6ffc4}
+.editor-tabs button.active,.ratio-options button.active b{color:#a1ff78}
+.editor-tabs button.active:after{background:var(--accent)}
+.ratio-options button.active{background:linear-gradient(145deg,#304624,#1d2a16);border-color:#53fc1880}
+.quality-orbit{background:radial-gradient(circle at 30% 30%,#3f662b,#1d3013);border-color:#62814c;color:#c2ffa6;box-shadow:0 0 30px #53fc1810}
+.quality-apply.applied{background:linear-gradient(110deg,#29451b,#1c2f13);border-color:#76a355;color:#c1ffa3}
+.quality-applied.applied{color:#a1d883}
+.quality-pane #qualityPreviewBtn{background:#293b1e;border-color:#5d7948;color:#d2f5bd}
+.fps-presets button.active{background:linear-gradient(140deg,#355127,#1d3014);border-color:#53fc1888;box-shadow:inset 0 1px #53fc1833}
+.fps-presets button:hover{background:#34462a;border-color:#87b566}
+.fps-readout>span:last-child b{color:var(--accent)}
+.sample-compare button.active{background:#2b421d;border-color:#7ca75e;color:#d1ffb8}
+.clip-card{background:#141d10;border-color:#394c2e}
+.clip-card:hover{border-color:#6d8c55}
+.clip-card.selected,.clip-card.selected:before{border-color:#53fc18}
+.clip-card.selected .clip-body{background:#53fc1807}
+.clip-score{background:#15200fed;border-color:#5e864777;color:#b3e49b}
+.detector-chip{color:#b4f891;background:#53fc1809;border-color:#53fc183b}
+.kill-marker{background:#53fc18;border-color:#8aff60;color:#0b1b04;box-shadow:0 2px 9px #0005}
+.kill-marker:hover{background:#a1ff78}
+.kill-marker.knock{background:#394630;border-color:#c8deba;color:#edffe2}
+.clip-card.kill-card .clip-score{color:#b6ff96;border-color:#53fc1866;background:#1c3013ef}
+.clip-card.kill-card .clip-reason{color:#b6cfa7}
+.export-spec{background:#53fc1809;border-color:#506b3c;color:#b8e99c}
+.dialog-error{background:#431c1c66;border-color:#89504a;color:#ffb9ae}
+.compatibility-banner{background:#2b2416;border-color:#7d6b43;color:#f2d9a1}
+.sample-compare button:focus-visible,.fps-presets button:focus-visible{outline-color:var(--accent)}
+/* The extended Fortnite form stays in document order on tablets and phones. */
+@media(max-width:1000px){.detect-content{display:block}.detect-content>h3{margin-bottom:10px}.detect-content>p{margin-bottom:20px}.detect-content>.field-label{margin-bottom:9px}.detect-content .game-options{margin:0 0 20px}.detect-content>.two-fields,.detect-content>.field{margin:0 0 15px}.detect-content>.check-label{margin:14px 0 19px}.detect-content>.info-note{margin-top:12px}.detect-content>.progress-box{margin:13px 0}}
+@media(max-width:600px){.sidebar{background:#0b100af2;border-top-color:#35482a}.nav-item.active{background:#53fc180a}.content{padding-bottom:0}}
+/* Reference-inspired image profile and actual output information. */
+.reference-look{display:flex;align-items:center;gap:12px;width:100%;padding:16px 12px;text-align:left;color:#edffe3;border:1px solid #53833a;border-radius:10px;background:linear-gradient(130deg,#304725,#162412);box-shadow:inset 0 1px #cbffb21a;transition:border-color .15s,background .15s}
+.reference-look:hover:not(:disabled),.reference-look.active{background:linear-gradient(130deg,#3c5a2e,#1b3014);border-color:var(--accent)}
+.reference-look-art{display:grid;place-items:center;width:42px;height:48px;flex-shrink:0;background:linear-gradient(140deg,#28c1e0,#268ade 50%,#4c642a);border:1px solid #bdf7fc44;border-radius:7px;box-shadow:0 4px 12px #0004;color:#e9ffff}
+.reference-look-art .icon{height:24px;width:24px;filter:drop-shadow(0 1px 3px #0008)}
+.reference-look>span:nth-child(2){display:flex;flex-direction:column;gap:4px;min-width:0;flex:1}
+.reference-look small{font-size:7px;letter-spacing:1.4px;color:#b2d89c}
+.reference-look strong{font-size:17px;font-weight:650;letter-spacing:-.4px}
+.reference-look span span{font-size:9px;color:#b8d9a6;line-height:1.5}
+.reference-look>b{color:var(--accent);font-size:21px;font-weight:400}
+.reference-look[aria-pressed=true]>b{color:#d9ffca}
+.reference-look-note{font-size:9px;color:#9fb391;line-height:1.65;margin:9px 0 15px}
+.image-detail-section .range-label{font-size:11px;margin:0 0 12px;color:#d0e5c1}
+.image-detail-section .range-label output{font-size:11px;color:var(--accent)}
+.image-detail-section .small-note{font-size:9px;margin-bottom:5px}
+.quality-output-spec{padding:10px 11px;background:#0e1809;border:1px solid #365328;border-radius:6px;color:#c0e6ab;font-size:9px;font-variant-numeric:tabular-nums;line-height:1.65;margin:12px 0 8px}
+#sourceQualityNote{font-size:9px;line-height:1.7}
+@media(min-width:601px) and (max-width:1000px){.quality-pane fieldset{display:block}.reference-look{max-width:100%}.quality-intro{max-width:none}.reference-look strong{font-size:20px}.image-detail-section .range-label{max-width:600px}}
+@media(max-width:600px){.reference-look{padding:17px 13px}.reference-look strong{font-size:19px}.reference-look-note,.image-detail-section .small-note,#sourceQualityNote{font-size:10px}.quality-output-spec{font-size:10px}.image-detail-section .range-label{font-size:12px}}
+/* FelipeDMC authorship: use the supplied transparent logo without alteration. */
+.creator-signature{display:flex;flex-direction:column;align-items:center;gap:0;margin:16px 0 0;padding:18px 0 6px;border-top:1px solid #2c3329;text-align:center}
+.creator-signature figcaption{color:#94a18e;font-size:8px;font-weight:600;letter-spacing:2px}
+.creator-signature img{display:block;width:146px;max-width:100%;height:auto;object-fit:contain}
+.creator-signature>span{color:#94a18e;font-size:9px;letter-spacing:.2px}
+.page-footer .footer-creator{display:flex;align-items:center;gap:12px;text-align:left}
+.footer-creator img{display:block;width:100px;height:100px;flex-shrink:0;object-fit:contain}
+.footer-creator>div{display:flex;flex-direction:column;gap:5px}
+.page-footer .creator-kicker{font-size:7px;letter-spacing:1.4px;color:#94a18e}
+.page-footer .footer-creator b{font-size:13px;font-weight:600;letter-spacing:.2px;color:#dfe8da}
+.page-footer .footer-creator>div>span:last-child{font-size:9px;color:#94a18e}
+@media(max-width:1280px){.creator-signature{padding:12px 0 4px}.creator-signature figcaption,.creator-signature>span{display:none}.creator-signature img{width:46px}}
+@media(max-width:600px){.page-footer{gap:10px;padding:20px 0 12px}.footer-creator img{width:104px;height:104px}.page-footer .footer-creator{gap:10px}}

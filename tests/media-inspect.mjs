@@ -1,0 +1,11 @@
+import fs from 'node:fs/promises';
+import assert from 'node:assert/strict';
+globalThis.self=globalThis;
+const messages=[];globalThis.postMessage=(message)=>messages.push(message);
+await import('../dist/media-worker.js');
+const file=new Blob([await fs.readFile(new URL('../dist/demo.mp4',import.meta.url))],{type:'video/mp4'});
+await self.onmessage({data:{action:'inspect',file}});
+const error=messages.find(m=>m.type==='error');assert.equal(error,undefined,error?.message);
+const {meta}=messages.find(m=>m.type==='result').result;
+assert.equal(meta.width,640);assert.equal(meta.height,360);assert.ok(Math.abs(meta.duration-50)<.1);assert.equal(meta.hasAudio,true);assert.equal(meta.videoCodec,'avc');
+console.log('Mediabunny real: demo MP4 640×360, 50 segundos, H.264 y audio detectados. Sin emulación de decodificador.');

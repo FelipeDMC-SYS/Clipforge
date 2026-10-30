@@ -1,0 +1,3 @@
+# Solo para regenerar recursos; no hace falta para usar o publicar el sitio.
+Pillow==12.3.0
+numpy==2.3.5

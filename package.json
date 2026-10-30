@@ -1,0 +1,17 @@
+{
+  "name": "clipforge-felipedmc",
+  "version": "1.8.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check dist/app.js && node --check dist/export-queue.js && node --check dist/export-panel.js && node --check dist/export-output.js && node --check dist/export-storage.js && node --check dist/media-worker.js && node --check dist/timeline-editor.js && node --check dist/frame-mixer.js && node --check dist/frame-rate.js && node --check dist/fortnite-vision.js && node --check dist/fortnite-events.js && node --check dist/image-quality.js && node --test tests/core.test.mjs tests/frame-rate.test.mjs tests/fortnite.test.mjs tests/image-quality.test.mjs tests/export-config.test.mjs tests/export-queue.test.mjs tests/export-output.test.mjs",
+    "start": "node scripts/serve.mjs",
+    "test:dom": "node tests/dom-smoke.mjs",
+    "test:media": "node tests/media-inspect.mjs",
+    "test:ocr": "node tests/ocr-smoke.mjs"
+  },
+  "description": "Editor local de clips y videos completos · by FelipeDMC",
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,12 @@
+CLIPFORGE - by FelipeDMC
+Codigo completo preparado para GitHub, version 1.8.0.
+
+1. Extrae el ZIP completo.
+2. Para ejecutarlo en Windows: instala Node.js 24 y abre INICIAR_CLIPFORGE.bat.
+3. Abre la direccion local que muestra la ventana (normalmente http://localhost:8000/).
+4. Para subirlo a GitHub sigue SUBIR_A_GITHUB.md.
+5. Para conocer las carpetas y pruebas lee README.md.
+
+La carpeta dist contiene el sitio completo y debe conservarse en el repositorio.
+No necesitas claves de API ni una base de datos para ejecutar esta version.
+La exportacion funciona en el navegador del visitante; deja la pagina abierta hasta terminar.
